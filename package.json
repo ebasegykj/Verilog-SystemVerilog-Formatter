@@ -1,0 +1,81 @@
+{
+  "name": "v-formatter",
+  "displayName": "Verilog/SystemVerilog Formatter",
+  "description": "Format .v/.sv files: indent, keyword spacing, operator spacing, comment preservation",
+  "version": "0.2.0",
+  "publisher": "gykjw",
+  "author": {
+    "name": "gykjw",
+    "email": "gykjwrq@163.com"
+  },
+  "icon": "app.ico",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:verilog",
+    "onLanguage:systemverilog"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "verilog",
+        "extensions": [
+          ".v",
+          ".vh"
+        ],
+        "aliases": [
+          "Verilog",
+          "verilog"
+        ]
+      },
+      {
+        "id": "systemverilog",
+        "extensions": [
+          ".sv",
+          ".svh"
+        ],
+        "aliases": [
+          "SystemVerilog",
+          "systemverilog"
+        ]
+      }
+    ],
+    "configuration": {
+      "title": "Verilog Formatter",
+      "properties": {
+        "vFormatter.indentSize": {
+          "type": "number",
+          "default": 2,
+          "minimum": 0,
+          "maximum": 8,
+          "description": "Indentation size (spaces per level)"
+        },
+        "vFormatter.alignPorts": {
+          "type": "boolean",
+          "default": false,
+          "description": "Align module ports in columns (v0.2)"
+        },
+        "vFormatter.alignAssign": {
+          "type": "boolean",
+          "default": false,
+          "description": "Align consecutive = / <= in columns (v0.2)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  }
+}
