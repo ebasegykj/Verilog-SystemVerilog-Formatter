@@ -24,16 +24,16 @@ Open a `.v`/`.sv` file → Right-click → **Format Document** (or `Shift+Alt+F`
 
 
 ## Configuration
-
+没有设置选项安装即用
 | Key | Default | Description |
 |-----|---------|-------------|
 | `vFormatter.indentSize` | 2 | Spaces per indent level |
 | `vFormatter.alignPorts` | false | (reserved) |
 | `vFormatter.alignAssign` | false | (reserved) |
 
-## Install from .vsix
 
-```
-code --install-extension v-formatter-0.2.0.vsix
-```
+## Install from .vsix
+安装
+应用商店搜索gykjw 安装即可
+search for gykjw in the app store and install it
 > gykjwrq@163.com by@RhycWu
