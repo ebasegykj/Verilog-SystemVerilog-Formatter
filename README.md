@@ -33,7 +33,11 @@ Open a `.v`/`.sv` file → Right-click → **Format Document** (or `Shift+Alt+F`
 
 
 ## Install from .vsix
+
 安装
+
 应用商店搜索gykjw 安装即可
+
 search for gykjw in the app store and install it
+
 > gykjwrq@163.com by@RhycWu
